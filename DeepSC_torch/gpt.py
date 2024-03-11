@@ -120,7 +120,7 @@ def check_answer(a_ex, chat):
   return tf_response, tf_check, harm_check
 
 if __name__ == "__main__":
-  genai.configure(api_key='AIzaSyAIDGGnKf4NFyGFPSIrpyIV6O5thj85RR4')
+  genai.configure(api_key='API_KEY')
   model = genai.GenerativeModel('gemini-pro')
 
   context_list, qas_list = load_json2list()
